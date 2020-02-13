@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/static/css/bootstrap.css">
+    <title>登录</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="col">
+        <form class="form-login" action="/login/" method="post">
+            <h3 class="text-center">欢迎登录</h3>
+            <div class="form-group">
+                <label for="id_username">用户名：</label>
+                <input type="text" name='username' class="form-control" id="id_username" placeholder="Username"
+                       autofocus required>
+            </div>
+            <div class="form-group">
+                <label for="id_password">密码：</label>
+                <input type="password" name='password' class="form-control" id="id_password" placeholder="Password"
+                       required>
+            </div>
+            <div>
+                <a href="/register/" class="text-success ">
+                    <ins>新用户注册</ins>
+                </a>
+                <button type="submit" class="btn btn-primary float-right">登录</button>
+            </div>
+        </form>
+    </div>
+</div> <!-- /container -->
+<script src="/static/js/jquery-3.4.1.js"></script>
+<script src="/static/js/popper.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+</body>
+</html>
